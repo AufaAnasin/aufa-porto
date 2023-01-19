@@ -4,6 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import './index.scss'
+import Loader from 'react-loaders';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
     const nameArray = ['A', 'u', 'f', 'a', ' ', 'A', 'n', 'a', 's', 'i','n']
     const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r']
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -24,7 +26,7 @@ const Home = () => {
                 <img src={LogoTitle} alt="developer" />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={nameArray}
-                    idx={15} />
+                    idx={11} />
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray}
@@ -36,6 +38,8 @@ const Home = () => {
             </div>
             <Logo />
         </div>
+        <Loader type="pacman" />
+        </>
     )
 }
 

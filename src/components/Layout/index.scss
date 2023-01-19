@@ -7,6 +7,9 @@
 .top-tags {
     bottom: auto;
     top: 35px;
+    content: '<body>';
+    font-family: 'La Belle Aurore';
+    font-size: 18px;
 }
 
 .tags {
@@ -15,10 +18,16 @@
     position: absolute;
     bottom: 0;
     left: 120px;
+    content: '</body>';
+    font-family: 'La Belle Aurore';
+    font-size: 18px;
 }
 
 .bottom-tag-html {
     margin-left: -20px;
+    content: '</html>';
+    font-family: 'La Belle Aurore';
+    font-size: 18px;
 }
 
 .container {
@@ -34,4 +43,84 @@
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s ;
+}
+
+.about-page,
+.contact-page { 
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 30%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 0%;
+    }
+    h1 {
+        font-size: 68px;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        color: #ffd700;
+        // margin-top: 0px;
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-weight: 18px;
+        }
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -150px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: 300;
+        min-width: fit-content;
+        animation: pulse 1s;
+
+        &:nth-of-type(1) {
+            animation-delay: 1.1s;
+        }
+
+        &:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: 1.3s;
+        }
+    }
+}
+
+.background-animation {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #022c43, #444, #ffd700);
+    background-size:300% 300%;
+    animation: color 12s ease-in-out infinite;
+
+}
+@keyframes color { 
+    0% { 
+        background-position: 0 50%;
+    }
+    50% { 
+        background-position: 100% 50%;
+    }
+    100% { 
+        background-position: 0 50%;
+    }
 }

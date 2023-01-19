@@ -6,6 +6,7 @@ const Layout = () => {
     return (
     <div className='App'>
     <Sidebar />
+    <div className='background-animation'>
     <div className='page'>
         <span className='tags top-tags'>&lt;body&gt;</span>
         <Outlet />
@@ -14,6 +15,7 @@ const Layout = () => {
             <br />
             <span className='bottom-tag-html'>&lt;/html&gt;</span>
         </span>
+    </div>
     </div>
     </div>
     )
