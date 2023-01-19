@@ -26,4 +26,7 @@
         // transform: rotateZ(30deg);
         z-index: 1;
     }
+    @media screen and (max-width: 890px) {
+        opacity: 0;
+    }
 }

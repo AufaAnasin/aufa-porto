@@ -6,6 +6,9 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+        @media screen and (max-width: 736px) {
+            left: 20%;   
+        }
     }
     h1 { 
         color: #fff;
@@ -31,6 +34,9 @@
             margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+        }
+        @media screen and (max-width: 736px) {
+            font-size: 30px;
         }
             img { 
                 width: 130px;

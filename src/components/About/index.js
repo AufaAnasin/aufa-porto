@@ -15,6 +15,7 @@ const About = () => {
     return (
         <>
         <div className='container about-page'>
+            {/* text zone nya di layout/index.scss */}
             <div className='text-zone'>
                 <h1>
                     <AnimatedLetters
