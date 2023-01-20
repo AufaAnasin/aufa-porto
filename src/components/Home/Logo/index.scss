@@ -27,6 +27,6 @@
         z-index: 1;
     }
     @media screen and (max-width: 890px) {
-        opacity: 0;
+        display: none;
     }
 }
